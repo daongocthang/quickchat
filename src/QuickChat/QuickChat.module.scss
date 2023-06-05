@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto Sans');
+@import './components/colors';
+
+@mixin --app-border {
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: $border-color;
+    border-style: solid;
+}
+
+.wrapper {
+    width: 375px;
+    height: 560px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+}
+.container {
+    height: 100%;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    @include --app-border();
+}
